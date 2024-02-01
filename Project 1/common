@@ -1,0 +1,18 @@
+######## Correct Words###########################################
+from textblob import TextBlob
+import re
+
+x=input("Enter the string")
+new_doc = TextBlob(x)
+
+result = new_doc.correct()
+print(result)
+
+
+######### Give Word Related Example################################
+from nltk.corpus import wordnet
+syn = wordnet.synsets("partner")
+print(syn[0].definition())
+print(syn[0].examples())
+
+
